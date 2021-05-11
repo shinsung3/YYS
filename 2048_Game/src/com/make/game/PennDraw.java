@@ -1731,13 +1731,13 @@ public final class PennDraw implements ActionListener, MouseListener, MouseMotio
 //		PennDraw.filledPolygon(.1, .2, .2, .3, .3, .2);
 
 		// text
-//		PennDraw.setFontSize(12);
-//		PennDraw.setPenColor(PennDraw.BLACK);
-//		PennDraw.text(0.2, 0.5, "black text");
-//		PennDraw.text(0.2, 0.5, "black text", 30);
-//		PennDraw.setFont("Serif");
-//		PennDraw.setPenColor(PennDraw.WHITE);
-//		PennDraw.text(0.8, 0.8, "white serif text");
+		PennDraw.setFontSize(12);
+		PennDraw.setPenColor(PennDraw.BLACK);
+		PennDraw.text(0.2, 0.5, "black text");
+		PennDraw.text(0.2, 0.5, "black text", 30);
+		PennDraw.setFont("Serif");
+		PennDraw.setPenColor(PennDraw.WHITE);
+		PennDraw.text(0.8, 0.8, "white serif text");
 	}
 
 }

@@ -37,5 +37,9 @@ public class MakeTable {
 		PennDraw.line(0.25, 1, 0.25, 0);
 		PennDraw.line(0.5, 1, 0.5, 0);
 		PennDraw.line(0.75, 1, 0.75, 0);
+		
+		PennDraw.setPenColor(PennDraw.WHITE);
+		PennDraw.setFontSize(85);
+		PennDraw.text(0.125, 0.125, "2");
 	}
 }

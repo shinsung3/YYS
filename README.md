@@ -22,3 +22,17 @@
 
 
 
+3. 랜덤하게 숫자 2개를 가져오기.
+
+   - int 변수를 통해서 숫자 2개를 만들어 낼 것임.
+
+   - 숫자는 오로지 2 or 4
+
+   - 화면에 출력까지.
+
+   - ```java
+     public static void setFontSize(double pointSize)
+     public static void text(double x, double y, String s)
+     ```
+
+     
