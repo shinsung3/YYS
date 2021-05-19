@@ -32,7 +32,9 @@
 
    - ```java
      public static void setFontSize(double pointSize)
-     public static void text(double x, double y, String s)
-     ```
+     public static void text(double x, double y, String s)```
+     
+4. 명확한 색상을 구하기.
+   - https://html-color-codes.info/colors-from-image/
 
      
