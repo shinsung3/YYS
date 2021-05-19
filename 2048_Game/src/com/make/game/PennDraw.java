@@ -1293,8 +1293,8 @@ public final class PennDraw implements ActionListener, MouseListener, MouseMotio
 	 * @param x the center x-coordinate of the text
 	 * @param y the center y-coordinate of the text
 	 * @param s the text
-	 */
-	public static void text(double x, double y, String s) {
+	 */public static void text(double x, double y, String s)
+	 {
 		text(x, y, s, 0);
 	}
 

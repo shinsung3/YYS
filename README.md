@@ -33,8 +33,22 @@
    - ```java
      public static void setFontSize(double pointSize)
      public static void text(double x, double y, String s)```
-     
+   
 4. 명확한 색상을 구하기.
    - https://html-color-codes.info/colors-from-image/
 
-     
+5. 키가 들어왔는지 확인하기.
+
+   - ```java
+     public static char nextKeyTyped() 
+     public static boolean hasNextKeyTyped()
+     ```
+
+6. 키 확인하고 방향 움직여서 좌표구하기!
+
+   - W
+     - 모든 값들이 전부 다 위로 올라가는 역할.
+     - 다시 전체 2차원 배열을 찾아서
+     - 숫자가 있는 위치의 인덱스를 기억하고 위로 올려줍니다.
+     - 움직이는 것만 찾기
+
