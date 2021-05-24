@@ -1,8 +1,6 @@
 package com.make.game;
-/*
- * 그림그리는 역할
- */
-public class Box {
+
+public class Table {
 
 	// Board배열에서의 Box의 위치
 	private double boardX, boardY;
@@ -16,9 +14,10 @@ public class Box {
 	 *   {1,0},{1,1},{1,2},{1,3}
 	 *   {2,0},{2,1},{2,2},{2,3}
 	 *   {3,0},{3,1},{3,2},{3,3}
+	 * }   
 	 */
 
-	public Box(int x, int y, int boxValue) {
+	public Table(int x, int y, int boxValue) {
 		this.x = x;
 		this.y = y;
 		// (y,x)
@@ -74,6 +73,18 @@ public class Box {
 		}
 		
 		PennDraw.text(boardX, boardY, "" + value);
+	}
+
+	public void setBoxValue(int n) {
+		
+	}
+
+	public void setX(int x) {
+		boardX = x;
+	}
+
+	public void setY(int y) {
+		boardY = y;
 	}
 
 }

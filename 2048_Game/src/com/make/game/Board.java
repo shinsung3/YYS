@@ -1,13 +1,15 @@
 package com.make.game;
 
-public class MakeGameBoard {
-	Box[][] box;
+import java.util.Arrays;
+
+public class Board {
+	 Table[][] box;
 	private int boxNumber;
 	private boolean lose;
 	private boolean win;
 
-	public MakeGameBoard() {
-		box = new Box[4][4];
+	public Board() {
+		box = new Table[4][4];
 		// 현재 박스 갯수
 		this.boxNumber = 0;
 		this.lose = false;
@@ -77,7 +79,7 @@ public class MakeGameBoard {
 	public void randomPick() {
 		int empty = emptyCounter();
 		int random = (int) (Math.random() * empty);
-
+ 
 		int[] rowArr = randomRow();
 		int[] colArr = randomCol();
 
@@ -93,7 +95,7 @@ public class MakeGameBoard {
 			boxValue = 4;
 		}
 
-		box[colIndex][rowIndex] = new Box(rowIndex, colIndex, boxValue);
+		box[colIndex][rowIndex] = new Table(rowIndex, colIndex, boxValue);
 		boxNumber += 1;
 	}
 
@@ -132,20 +134,29 @@ public class MakeGameBoard {
 		return out;
 
 	}
-
 	public void moveBox(char c) {
-		if (c == 'w') {
-			//모든 값들이 전부 다 위로 올라가는 역할.
-			//다시 전체 2차원 배열을 찾아서 -> 숫자가 있는 위치의 인덱스를 기억하고 
-			//위로 올려줍니다.
-		} else if (c == 'a') {
-		} else if (c == 'd') {
-		} else if (c == 's') {
+		if(c == 'w') {
+			for(int i = 0; i<4; i++) {
+				//up
+			}
+		}else if(c == 'a') {
+			for(int i = 0; i<4; i++) {
+				//left
+			}
+		}else if (c == 'd') {
+			for(int i = 0; i<4; i++) {
+				//right
+			}
+		}else if(c == 's') {
+			for(int i = 0; i<4; i++) {
+				//down
+				
+			}
 		}
 	}
 
 	public static void main(String[] args) {
-		MakeGameBoard game1 = new MakeGameBoard();
+		Board game1 = new Board();
 		game1.randomPick();
 		game1.randomPick();
 		String out = game1.toString();
