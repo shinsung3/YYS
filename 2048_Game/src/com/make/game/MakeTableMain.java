@@ -1,5 +1,7 @@
 package com.make.game;
 
+import java.util.Arrays;
+
 public class MakeTableMain {
 	static final double r = 0.05;
 
@@ -43,17 +45,25 @@ public class MakeTableMain {
 
 		PennDraw.setPenColor(PennDraw.WHITE);
 
+		int[][] table = new int[4][4];
 		Game test = new Game();
-		test.randomInit();
-		test.drawBoard();
-		System.out.println(test.toString());
-
+		table = test.randomInit(table);
+		System.out.println(">>>>>>> Table TEST ::::: <<<<<");
+		for(int[] a: table)
+			System.out.println(Arrays.toString(a));
+//		test.drawBoard();
+//		System.out.println(test.toString());
+//
 		while (true) {
 			if (PennDraw.hasNextKeyTyped()) {
 				char key = PennDraw.nextKeyTyped();
-				test.moveBox(key);
-				test.randomNumber();
-				System.out.println(test.toString());
+				test.moveTable(key, table);
+				System.out.println(">>>>>>> Table Moving TEST ::::: <<<<<");
+				for(int[] a: table)
+					System.out.println(Arrays.toString(a));
+//				test.randomNumber(); 
+				//randomNumber더이상 이 Main에서 부를 수 없어요.
+//				System.out.println(test.toString());
 //				test.sum(key);
 			}
 		}
